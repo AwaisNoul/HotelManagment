@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardElevation="@dimen/_3sdp"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/_10sdp">
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/hotelImage"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:src="@drawable/img"/>
+
+
+        <EditText
+            android:id="@+id/hotelName"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_45sdp"
+            android:background="@drawable/text_round_background"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:hint="Hotel Name"
+            android:padding="@dimen/_10sdp"
+            android:textColor="@color/textColor"
+            android:textColorHint="@color/textHint" />
+
+        <EditText
+            android:id="@+id/hotelPrice"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_45sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:background="@drawable/text_round_background"
+            android:hint="Hotel Price"
+            android:padding="@dimen/_10sdp"
+            android:inputType="number"
+            android:textColor="@color/textColor"
+            android:textColorHint="@color/textHint" />
+
+        <EditText
+            android:id="@+id/hotelLocation"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_45sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:background="@drawable/text_round_background"
+            android:hint="Hotel Location"
+            android:padding="@dimen/_10sdp"
+            android:textColor="@color/textColor"
+            android:textColorHint="@color/textHint" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="20dp">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/cancelButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="25dp"
+                android:layout_marginLeft="25dp"
+                android:background="@drawable/btn_round_background"
+                android:layout_weight=".8"
+                android:textColor="@color/textColor"
+                android:text="Cancel" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/saveButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="25dp"
+                android:background="@drawable/btn_round_background"
+                android:layout_weight=".8"
+                android:textColor="@color/textColor"
+                android:text="Save" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

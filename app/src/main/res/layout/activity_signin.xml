@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical"
+    tools:context=".Activitys.Signin">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_60sdp"
+            android:text="Fill your Profile"
+            android:textColor="@color/textColor"
+            android:textSize="@dimen/_27sdp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/fullName"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_45sdp"
+            android:layout_margin="@dimen/_10sdp"
+            android:background="@drawable/text_round_background"
+            android:hint="Full Name"
+            android:padding="@dimen/_10sdp"
+            android:textColor="@color/textColor"
+            android:textColorHint="@color/textHint" />
+
+        <EditText
+            android:id="@+id/pNumber"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_45sdp"
+            android:layout_margin="@dimen/_10sdp"
+            android:background="@drawable/text_round_background"
+            android:hint="Phone Number"
+            android:inputType="number"
+            android:padding="@dimen/_10sdp"
+            android:textColor="@color/textColor"
+            android:textColorHint="@color/textHint" />
+
+        <EditText
+            android:id="@+id/dateOfBirthEditText"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_45sdp"
+            android:layout_margin="@dimen/_10sdp"
+            android:background="@drawable/text_round_background"
+            android:drawableEnd="@drawable/ic_calendar"
+            android:drawablePadding="@dimen/_15sdp"
+            android:hint="Date of Birth"
+            android:padding="@dimen/_10sdp"
+            android:textColor="@color/textColor"
+            android:textColorHint="@color/textHint" />
+
+        <EditText
+            android:id="@+id/semail"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_45sdp"
+            android:layout_margin="@dimen/_10sdp"
+            android:background="@drawable/text_round_background"
+            android:drawableEnd="@drawable/ic_mail"
+            android:drawablePadding="@dimen/_15sdp"
+            android:hint="Email"
+            android:padding="@dimen/_10sdp"
+            android:textColor="@color/textColor"
+            android:textColorHint="@color/textHint" />
+
+        <EditText
+            android:id="@+id/spassword"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_45sdp"
+            android:layout_margin="@dimen/_10sdp"
+            android:background="@drawable/text_round_background"
+            android:hint="Password"
+            android:padding="@dimen/_10sdp"
+            android:textColor="@color/textColor"
+            android:textColorHint="@color/textHint" />
+
+        <TextView
+            android:id="@+id/signin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_50sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:background="@drawable/btn_round_background"
+            android:gravity="center"
+            android:padding="@dimen/_12sdp"
+            android:text="Sign in with password"
+            android:textColor="@color/textColor"
+            android:textSize="@dimen/_14sdp" />
+
+    </LinearLayout>
+</ScrollView>

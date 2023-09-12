@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#04243A"
+    tools:context=".Activitys.MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <FrameLayout
+            android:id="@+id/fragmentContainer"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/bottomNav"
+            />
+
+        <me.ibrahimsn.lib.SmoothBottomBar
+            android:id="@+id/bottomNav"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            app:backgroundColor="#04243A"
+            app:textColor="@color/white"
+            app:textSize="14sp"
+            app:iconSize="24dp"
+            app:indicatorColor="#2DFFFFFF"
+            app:indicatorRadius="16dp"
+            app:sideMargins="10dp"
+            app:itemPadding="10dp"
+            app:iconTint="#C8FFFFFF"
+            app:iconTintActive="#FFFFFF"
+            app:cornerRadius="12dp"
+            app:corners="top_left|top_right"
+            app:menu="@menu/bottom_navigation_menu"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        app:headerLayout="@layout/nav_header"
+        app:menu="@menu/nav_menu"
+        android:background="#04243A"
+        android:layout_gravity="start"
+        app:itemTextColor="@color/textColor"
+        app:itemIconTint="@color/white"
+        android:fitsSystemWindows="true"
+        app:itemTextAppearance="@style/ProfileMenuItemStyle"/>
+
+</androidx.drawerlayout.widget.DrawerLayout>
