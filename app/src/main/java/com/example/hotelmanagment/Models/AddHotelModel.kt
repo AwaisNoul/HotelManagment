@@ -1,15 +1,18 @@
 package com.example.hotelmanagment.Models
 
 data class AddHotelModel(
+    val key : String = "",
     val hotelName : String = "",
     val hotelEmail : String = "",
     val hotelphoneNumber :String = "",
     val hotelPrice : String = "",
     val location : String = "",
-    val firstImage : String,
-    val secImage : String,
-    val thirdImage : String,
-    val overview : String
+    val profileImage : String="",
+    val coverImage : String="",
+    val overview : String="",
+    val description : String="",
+    val whatnear : String="",
+    val attractions : String=""
     )
 
 // hotel photos ..

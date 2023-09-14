@@ -256,45 +256,13 @@
         </LinearLayout>
 
         <LinearLayout
-            android:id="@+id/l6"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_marginTop="@dimen/_15sdp"
-            android:layout_marginStart="@dimen/_10sdp"
-            app:layout_constraintTop_toBottomOf="@+id/l5"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent">
-
-            <ImageView
-                android:layout_width="@dimen/_20sdp"
-                android:layout_height="@dimen/_20sdp"
-                android:src="@drawable/eyeview"
-                />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="Dark Theme"
-                android:fontFamily="@font/urbn"
-                android:textSize="@dimen/_13sdp"
-                android:textStyle="bold"
-                android:textColor="@color/textColor"
-                android:layout_gravity="center_vertical"
-                android:layout_marginStart="@dimen/_10sdp"/>
-
-
-        </LinearLayout>
-
-        <LinearLayout
             android:id="@+id/l7"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             android:layout_marginTop="@dimen/_15sdp"
             android:layout_marginStart="@dimen/_10sdp"
-            app:layout_constraintTop_toBottomOf="@+id/l6"
+            app:layout_constraintTop_toBottomOf="@+id/l5"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent">
 
